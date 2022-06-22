@@ -1,16 +1,17 @@
 [package]
 name = "failed-result"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 license = "MIT"
 authors = ["metaworm <metaworm@outlook.com>"]
 description = "A small crate for converting various failed value to result with corresponding error type"
 documentation = "https://docs.rs/failed-result"
 include = ["/src", "/tests", "README.md"]
+keywords = ['error', 'failure']
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 
 [target.'cfg(windows)'.dependencies]
-winapi = {version = '0.3.9', features = ["winnt", "processthreadsapi"]}
+windows = {version = '0.37', features = ["Win32_Foundation"]}
