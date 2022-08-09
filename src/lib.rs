@@ -23,7 +23,7 @@ pub trait LastError {
     fn last_error(self) -> IoResult<Self::Output>;
 }
 
-/// implements LastError for None
+/// implements [`LastError`] for Option
 impl<T> LastError for Option<T> {
     type Output = T;
 

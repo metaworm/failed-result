@@ -6,6 +6,7 @@ license = "MIT"
 authors = ["metaworm <metaworm@outlook.com>"]
 description = "A small crate for converting various failed value to result with corresponding error type"
 documentation = "https://docs.rs/failed-result"
+repository = "https://github.com/metaworm/failed-result"
 include = ["/src", "/tests", "README.md"]
 keywords = ['error', 'failure']
 
